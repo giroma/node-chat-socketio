@@ -13,5 +13,17 @@ class Users {
     this.users.push(user)
     return user
   }
+  removeUser (id) {
+    this.users = this.users.filter((user) => user.id !== id)
+    return this.users
+  }
+  getUser (id) {
+    return this.users.filter((user) => user.id === id)[0]
+  }
+  getUserList (room) {
+    let users = this.users.filter((user) => user.room === room)
+    let namesArray = users.map((user) => user.name)
+    return namesArray
+  }
 }
 module.exports = {Users}
