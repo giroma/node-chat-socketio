@@ -2,4 +2,4 @@
 Users can join rooms and their messages are local to those rooms(using socketio)
 
 Can be found at:
-https://afternoon-ridge-36898.herokuapp.com
+https://node-chat99.herokuapp.com/
